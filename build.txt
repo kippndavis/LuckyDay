@@ -1,6 +1,3 @@
 displayName = Lucky Day
 author = Spunk Bunkers
-version = 0.1.6 -- Rarity/sell price correction
-0.1.5 -- Description Changes
-0.1.1 // 0.1.4 -- Various small edits, trying to get icon working
-0.1 -- Initial Release
+version = 0.1.6
