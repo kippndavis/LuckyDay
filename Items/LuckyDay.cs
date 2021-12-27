@@ -21,7 +21,8 @@ namespace LuckyDay.Items
 		public override void SetDefaults() 
 		{
             item.accessory = true;
-            item.value = 10000;
+            item.value = 50000;
+            item.rare = -12;
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual)

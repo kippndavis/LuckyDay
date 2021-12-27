@@ -1,3 +1,5 @@
 Lucky Day adds the badge from Paper Mario fame into Terraria! 
 
 Crafted directly from and a sidegrade (well, upgrade in 1.3) to the Brain of Confusion, it works similarly to its 1.4 counterpart but with no Confusion effect/critical strike chance -- however, the dodge effect has no cooldown. Custom visuals and sound effects on proc.
+
+Crafted at a Tinkerer's Workshop | Recipe: Brain of Confusion
