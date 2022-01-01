@@ -4,6 +4,10 @@ Crafted directly from and a sidegrade (well, upgrade in 1.3) to the Brain of Con
 
 Crafted at a Tinkerer's Workshop | Recipe: Brain of Confusion
 
+Thanks for 4.5k downloads! Look for another badge mod soon!
+If you'd like to share feedback: MayMayMan#2768
+
+0.1.7 -- Sound effect volume slightly lowered (if you thought the old was fine, it's still in there to use), item description lists proc chance, cleaned up structure
 0.1.6 -- Rarity/sell price correction
 0.1.5 -- Description Changes
 0.1.1 through 0.1.4 -- Various small edits, trying to get icon working

@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Microsoft.Xna.Framework;
+using LuckyDay.Projectiles;
 
 namespace LuckyDay.Items
 {
@@ -27,7 +28,7 @@ namespace LuckyDay.Items
                 playSound = false;
                 hitDirection = 0;
                 player.AddBuff(mod.BuffType("Dodge"), (player.longInvince ? 120 : 80));
-                Main.PlaySound(SoundLoader.customSoundType, -1, -1, mod.GetSoundSlot(SoundType.Custom, "Sounds/LuckySFX"));
+                Main.PlaySound(SoundLoader.customSoundType, -1, -1, mod.GetSoundSlot(SoundType.Custom, "Sounds/LuckyDayOggQuieter"));
                 Projectile.NewProjectile(Main.player[Main.myPlayer].position.X, Main.player[Main.myPlayer].position.Y, 0, 0, ModContent.ProjectileType<LuckyDayAnim>(), 0, 0f);
                 return false;
             }

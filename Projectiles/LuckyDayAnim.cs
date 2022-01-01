@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Microsoft.Xna.Framework;
 
-namespace LuckyDay.Items
+namespace LuckyDay.Projectiles
 
 {
     public class LuckyDayAnim : ModProjectile
@@ -21,6 +21,7 @@ namespace LuckyDay.Items
         public override void SetDefaults()
         {
             projectile.timeLeft = 100;
+            projectile.light = 0.5f;
         }
 
         public override void AI()
