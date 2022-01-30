@@ -25,6 +25,11 @@ namespace LuckyDay.Items
             item.rare = -12;
         }
 
+        public override void UpdateInventory(Player player)
+        {
+            item.rare = -12;
+        }
+
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             modPlayer mPlayer = (modPlayer)(player.GetModPlayer(mod, "modPlayer"));
@@ -37,7 +42,7 @@ namespace LuckyDay.Items
 			ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.BrainOfConfusion, 1);
             recipe.AddTile(114); // Tinkerer's Workshop;
-			recipe.SetResult(this);
+            recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
 	}

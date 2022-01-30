@@ -23,19 +23,27 @@ namespace LuckyDay.Items
 
         public override bool PreHurt(bool pvp, bool quiet, ref int damage, ref int hitDirection, ref bool crit, ref bool customDamage, ref bool playSound, ref bool genGore, ref PlayerDeathReason damageSource)
         {
-            if (this.luckyDayItem == true && Main.rand.Next(6) == 0) // Lucky Day is equipped
-            {   
-                playSound = false;
-                hitDirection = 0;
-                player.AddBuff(mod.BuffType("Dodge"), (player.longInvince ? 120 : 80));
-                Main.PlaySound(SoundLoader.customSoundType, -1, -1, mod.GetSoundSlot(SoundType.Custom, "Sounds/LuckyDayOggQuieter"));
-                Projectile.NewProjectile(Main.player[Main.myPlayer].position.X, Main.player[Main.myPlayer].position.Y, 0, 0, ModContent.ProjectileType<LuckyDayAnim>(), 0, 0f);
-                return false;
-            }
-            else
+
+            if (player.whoAmI == Main.myPlayer) // Relevant for multi, otherwise random effects can trigger for other players
             {
-                return true;
+
+                if (this.luckyDayItem == true && Main.rand.Next(6) == 0) // Lucky Day is equipped
+                {
+                    playSound = false;
+                    hitDirection = 0;
+                    player.AddBuff(mod.BuffType("Dodge"), (player.longInvince ? 120 : 80));
+                    Main.PlaySound(SoundLoader.customSoundType, -1, -1, mod.GetSoundSlot(SoundType.Custom, "Sounds/LuckyDayOgg"));
+                    Projectile.NewProjectile(Main.player[Main.myPlayer].position.X, Main.player[Main.myPlayer].position.Y, 0, 0, ModContent.ProjectileType<LuckyDayAnim>(), 0, 0f, Main.myPlayer);
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
             }
+
+            return true;
+
         }
     }
 }
