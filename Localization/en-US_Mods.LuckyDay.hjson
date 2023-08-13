@@ -1,0 +1,19 @@
+Buffs: {
+	Dodge: {
+		DisplayName: Dodge
+		Description: Invincible
+	}
+}
+
+Items: {
+	LuckyDay: {
+		DisplayName: Lucky Day
+		Tooltip:
+			'''
+			Sometimes makes enemies fail to attack you
+			1/6 chance to proc
+			'''
+	}
+}
+
+Projectiles.LuckyDayAnim.DisplayName: Lucky Day Anim
