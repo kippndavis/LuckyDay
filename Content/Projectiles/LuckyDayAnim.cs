@@ -30,6 +30,7 @@ namespace LuckyDay.Content.Projectiles
             Projectile.rotation = 0;
             Projectile.position.X = Main.player[Projectile.owner].position.X - 45;
             Projectile.position.Y = Main.player[Projectile.owner].position.Y - 68;
+            Projectile.netUpdate = true;
 
             //This will cycle through all of the frames in the sprite sheet
             int frameSpeed = 1;

@@ -7,6 +7,7 @@ Crafted at a Tinkerer's Workshop | Recipe: Brain of Confusion
 Thanks for 20k+ downloads! If you enjoy this mod, check out Paper Mario Badges, also made by me!
 Please leave a comment or reach out to my Discord if you encounter a bug: .maymayman
 
+0.1.10 -- Fixed(?) de-syncing
 0.1.9 -- Ported to 1.4 (finally)
 0.1.8 -- Fixed some multiplayer issues
 0.1.7 -- Sound effect volume slightly lowered, item description lists proc chance, cleaned up structure
